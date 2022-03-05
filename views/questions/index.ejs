@@ -1,0 +1,22 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h2>All the Questions!</h2>
+	<ul>
+  <% question.forEach(q => { %>
+    <li><%=q.question %></li>
+
+    <form action="/questions/<%=q._id%>/edit" method="GET">
+      <button class="btn" type="submit">edit</button>
+    </form>
+    
+    <form action="/questions/<%=q._id%>?_method=DELETE" method="POST">
+      <button class="btn" type="submit">delete</button>
+    </form>
+
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>

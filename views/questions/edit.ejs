@@ -1,0 +1,18 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/flights/new.css" />
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %></h1>
+  <h1>Enter a question</h1>
+  <form action="/questions/<%= question._id %>?_method=PUT" method="POST">
+
+    <label>Question
+      <input name="question" value="<%= question.question%>"></input>
+    </label><br>
+
+    <button type="submit">Save question</button>
+  </form>
+</main>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,14 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h2>All the Trivia!</h2>
+  <p>This person... </p>
+	<ul>
+  <% trivia.forEach(el => { %>
+    <li><%= el.trivia %></li>
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>

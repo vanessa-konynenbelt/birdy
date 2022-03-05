@@ -1,0 +1,23 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h2>All the Advice!</h2>
+	<ul>
+  <% advice.forEach(ad => { %>
+      <li><%=ad.advice%></li>
+      <li><%=ad.years%></li>
+     
+      <form action="/advice/<%=ad._id%>/edit" method="GET">
+        <button class="btn" type="submit">edit</button>
+      </form>
+      
+      <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
+        <button class="btn" type="submit">delete</button>
+      </form>
+ 
+  <% }) %>
+  </ul>
+  <a href="/advice/new">Add Advice</a>
+
+<%- include('../partials/footer') %>

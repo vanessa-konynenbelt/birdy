@@ -1,0 +1,26 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/flights/new.css" />
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %></h1>
+  <h1>Enter some advice</h1>
+  <form action="/advice" method="POST" autocomplete="off">
+
+    <label>Advice
+      <input name="advice"></input>
+    </label><br>
+
+    <label>Years together
+      <input name="years"></input>
+    </label><br>
+
+    <label>Name
+      <input name="from"></input>
+    </label><br>
+
+    <button type="submit">Add Advice</button>
+  </form>
+</main>
+
+<%- include('../partials/footer') %>

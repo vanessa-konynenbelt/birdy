@@ -2,14 +2,13 @@ import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
 
-const triviaSchema = new Schema({
+const questionSchema = new Schema({
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
-  about: String, 
-  trivia: String,
+  question: String, 
 })
 
-const Trivia = mongoose.model('Trivia', triviaSchema)
+const Question = mongoose.model('Question', questionSchema)
 
 export {
-  Trivia
+  Question
 }
