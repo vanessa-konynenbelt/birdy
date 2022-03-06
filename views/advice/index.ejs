@@ -1,23 +1,35 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/advice/index.css" />
 <%- include('../partials/nav') %>
 
 <section>
-  <h2>All the Advice!</h2>
-	<ul>
+  <table div class="labels">
+    <tr>
+      <th>Words of Wisdom</th>
+      <th>Years together</th>
+    </tr><br>
   <% advice.forEach(ad => { %>
-      <li><%=ad.advice%></li>
-      <li><%=ad.years%></li>
-     
-      <form action="/advice/<%=ad._id%>/edit" method="GET">
-        <button class="btn" type="submit">edit</button>
-      </form>
+    <div class = "advice">
+      <tr>
+        <td><%=ad.advice%></td>
+        <td><%=ad.years%></td>
       
-      <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
-        <button class="btn" type="submit">delete</button>
-      </form>
- 
+        <td>
+        <form action="/advice/<%=ad._id%>/edit" method="GET">
+          <button class="btn" type="submit">edit</button>
+        </form>
+        </td>
+        
+        <td>
+        <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
+          <button class="btn" type="submit">delete</button>
+        </td>
+      </tr>
+    </div>
+
   <% }) %>
-  </ul>
+  
   <a href="/advice/new">Add Advice</a>
+  </section>
 
 <%- include('../partials/footer') %>
