@@ -3,7 +3,6 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1><%= title %></h1>
   <h1>Enter a question</h1>
   <form action="/questions" method="POST" autocomplete="off">
 
@@ -12,5 +11,8 @@
     </label><br>
 
     <button type="submit">Add Question</button>
+
+    <a href="/questions/home">Back</a>
+
   </form>
 </main>

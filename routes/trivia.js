@@ -14,9 +14,12 @@ router.get('/home', function (req, res) { //home
 })
 
 router.get('/play', function (req, res) { //play
-  res.render('trivia/play', { title: 'Play Trivia Game', user: req.user ? req.user : null })
+  res.render('trivia/play', { title: 'Play Trivia Intro', user: req.user ? req.user : null })
 })
 
+router.get('/game', function (req, res) { //play
+  res.render('trivia/game', { title: 'Play Trivia Game', user: req.user ? req.user : null })
+})
 export {
   router
 }
