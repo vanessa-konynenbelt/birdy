@@ -2,34 +2,26 @@
 <link rel="stylesheet" href="/stylesheets/advice/index.css" />
 <%- include('../partials/nav') %>
 
-<section>
-  <table div class="labels">
-    <tr>
-      <th>Words of Wisdom</th>
-      <th>Years together</th>
-    </tr><br>
   <% advice.forEach(ad => { %>
-    <div class = "advice">
-      <tr>
-        <td><%=ad.advice%></td>
-        <td><%=ad.years%></td>
-      
-        <td>
+  <div div class="grid-container">
+      <div class = "advice"><%=ad.advice%></div>
+      <div class = "from">From: <%=ad.from%></div>
+      <div class = "years">Together for <%=ad.years%> years</div>
+      <div>
         <form action="/advice/<%=ad._id%>/edit" method="GET">
-          <button class="btn" type="submit">edit</button>
+        <button class="edit" type="submit">edit</button>
         </form>
-        </td>
-        
-        <td>
+      </div>
+      <div>
         <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
-          <button class="btn" type="submit">delete</button>
-        </td>
-      </tr>
-    </div>
-
+        <button class="delete" type="submit">delete</button>
+        </form>
+      </div>
+  </div>
+  <br>
+  
   <% }) %>
   
   <a href="/advice/new">Add Advice</a>
-  </section>
-
+ 
 <%- include('../partials/footer') %>

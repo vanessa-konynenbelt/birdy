@@ -1,21 +1,59 @@
+
 body {
-  
+  display: flex;
+  flex-direction: column;
 }
 
-table { 
-  text-align: left; 
-  width: 100%;
-  vertical-align: middle; 
+.grid-container {
+  display: grid;
+  gap: 5px;
+  width: 100vh;
+  height: 10vh;
+  border-top: solid 1px orange;
+  border-bottom: solid 1px orange;
+  grid-column: 1fr 1fr 3fr 1fr 1fr;
+  padding: 0 0 5px 0;
 }
 
-th, td {
-  padding: 0.2em;
-  border-bottom: 1px solid #ddd;
+.grid-item {
+  text-align: center; 
+  padding: 10px; 
+  vertical-align: middle;
 }
 
+.advice {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  background-color: rgb(255, 229, 181);
+  height: 50px; 
+}
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+.from {
+  grid-column: 1; 
+  grid-row: 2; 
+  font-size: 80%;
+  color: rgb(92, 91, 91);
+}
+
+.years {
+  grid-column: 2; 
+  grid-row: 2; 
+  font-size: 80%;
+  color: rgb(92, 91, 91);
+}
+
+.edit {
+  grid-column: 5; 
+  grid-row: 2;
+  font-size: 60%;
+  color: rgb(92, 91, 91);
+}
+
+.delete {
+  grid-column: 6; 
+  grid-row: 2;
+  font-size: 60%;
+  color: rgb(92, 91, 91);
 }
 
 
