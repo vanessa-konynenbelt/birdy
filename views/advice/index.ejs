@@ -9,12 +9,12 @@
       <div class = "years">Together for <%=ad.years%> years</div>
       <div>
         <form action="/advice/<%=ad._id%>/edit" method="GET">
-        <button class="edit" type="submit">edit</button>
+        <button class="button, edit" type="submit">edit</button>
         </form>
       </div>
       <div>
         <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
-        <button class="delete" type="submit">delete</button>
+        <button class ="button, delete" type="submit">delete</button>
         </form>
       </div>
   </div>
@@ -22,6 +22,6 @@
   
   <% }) %>
   
-  <a href="/advice/new">Add Advice</a>
+  <a class = "button" href="/advice/new">Add Advice</a>
  
 <%- include('../partials/footer') %>
