@@ -1,6 +1,65 @@
+body {
+  background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='1100px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='60px' clip-path='url(%23emojiClipPath)'>👞👠👟👡🥾👢</text></svg>");
+  background-repeat: repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 section {
+  height: 87.5vh;
+  width: 75vh;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  color: #424748;
+  font-size: 200%;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+div > p {
+  justify-content: left;
+}
+
+div > form {
+  justify-content: right;
+}
+
+a, button {
+  background-color: white;
+  transition-duration: 0.15s;
+  border: 1px solid orange;
+  color: rgb(241, 60, 99);
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px; 
+  margin-right: 10px;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+button {
+  font-size: 70%;
+}
+
+a:hover, button:hover{
+  background-color: rgb(255, 211, 130);
 }

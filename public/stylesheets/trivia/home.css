@@ -1,5 +1,7 @@
 body {
   background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='150px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='130px' clip-path='url(%23emojiClipPath)'>📝</text></svg>");
+  background-repeat: repeat-y;
 }
 
 main {
@@ -7,12 +9,11 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
 
 section {
   height: 87.5vh;
-  width: 60vh;
+  width: 75vh;
   margin: 10px;
   padding: 10px;
   background-color: white;
