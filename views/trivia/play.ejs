@@ -1,12 +1,11 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/trivia/home.css" />
-<script type="module" defer src='/javascripts/play.js'></script>
 <%- include('../partials/nav') %>
 
 <section>
 <h2 id="text">I'll display one trivia at a time... you tell me who it's about. Ready? </h2>
-
-<button id = "button">Play!</button>
+<h2><%= trivia.trivia %></h2>
+<a href="/trivia/play/<%=trivia.idx+1%>">Play!</a>
 </section>
 
 <%- include('../partials/footer') %>

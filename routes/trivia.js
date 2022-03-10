@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import * as triviaCtrl from '../controllers/trivia.js'
+import { Trivia } from '../models/trivia.js'
 import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()
@@ -13,13 +14,9 @@ router.get('/home', function (req, res) { //home
   res.render('trivia/home', { title: 'Home Trivia Page', user: req.user ? req.user : null })
 })
 
-router.get('/play', function (req, res) { //play
-  res.render('trivia/play', { title: 'Play Trivia Intro', user: req.user ? req.user : null })
-})
+router.get('/play/:id', triviaCtrl.play)  
 
-router.get('/game', function (req, res) { //play
-  res.render('trivia/game', { title: 'Play Trivia Game', user: req.user ? req.user : null })
-})
+
 export {
   router
 }

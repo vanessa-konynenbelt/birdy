@@ -30,8 +30,33 @@ function newTrivia(req, res) {
     })
 }
 
+function play(req, res){
+  Trivia.find({})
+  .then(trivia => {
+    trivia.forEach((el, idx) => {
+      el.idx = idx
+    })
+    console.log(req.params.id)
+    console.log(trivia.length)
+    if(+req.params.id < trivia.length) {
+      res.render('trivia/play', {
+        trivia: trivia[req.params.id],
+        title: "Play Trivia Intro", 
+        user: req.user ? req.user : null,
+      })
+    }else {
+      res.redirect('/trivia/home')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/trivia")
+  })
+}
+
 export {
   index, 
   create,
   newTrivia as new, 
+  play,
 }

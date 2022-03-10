@@ -48,6 +48,7 @@ nav > a {
   padding: 10px;
   border-radius: 5px;
   color: #424748;
+  border: none;
 }
 
 nav > a:visited {

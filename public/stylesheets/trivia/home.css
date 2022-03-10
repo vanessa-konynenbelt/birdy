@@ -4,3 +4,28 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+h1 {
+  color: #424748;
+}
+
+div {
+  margin: 0 20px 0 20px;
+}
+
+a {
+  transition-duration: 0.15s;
+  border: 1px solid orange;
+  color: #424748;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px; 
+  margin-right: 10px;
+  font-size: 60%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: rgb(255, 211, 130);
+}
