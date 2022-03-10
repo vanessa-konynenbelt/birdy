@@ -1,70 +1,35 @@
-# MEN Stack with OAuth Template
+# Birdy
 
-This is a MEN Stack template that includes OAuth.
+![Birdy home]()
 
-Use this to go build things! 🚀
+Motivated by my brother's impending nuptials, I created Birdy as a fun and interactive way to entertain wedding guests and the couple alike. Guests can enter fun trivia about the bride and groom, add questions for the couple, or share  sweet marriage advice. 
 
-## To Use This Template
+---
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+## [Link to birdy](https://birdy-vgk.herokuapp.com/)
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+---
+## Credits 
 
-Once you are in the project directory:
+- Quarto uses fonts by xxxx. Found at: https://fonts.google.com/specimen/xxxxxxxx
+- Quarto uses graphics by xxxx. Found at: https://canva.xxxxx
 
-```bash
-rm -rf .git
-```
+---
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+## Technologies used 
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Re-initialize a git repository:
+---
 
-```bash
-git init
-```
-Use whatever method you'd like to get your project on GitHub. If you're looking for speed though use the GitHub CLI to create a new project repository on GitHub:
+## Ice Box Items 
 
-```bash
-gh repo create <name-of-your-app-here> --public --source .
-```
-Check out the docs [here](https://cli.github.com/manual/gh_repo_create) if you want to learn more about this command. 
+- [x] Add questions
+- [x] Add advice
+- [ ] Add play trivia logic
+- [ ] Scale to mobile
 
-Run npm i to fetch the template's dependencies:
 
-```bash
-npm i
-```
 
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CALLBACK=http://localhost:3000/auth/google/oauth2callback
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this README.md and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
