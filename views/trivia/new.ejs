@@ -3,7 +3,8 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>Enter a Trivia</h1>
+  <h2>Enter a fun fact, short story, or trivia tidbit about the bride or groom!</h2>
+  <h3>Don't give away who it's about! We'll guess!</h3>
   <form action="/trivia" method="POST" autocomplete="off">
 
     <label>About
@@ -17,10 +18,11 @@
       <textarea name="trivia"></textarea>
     </label><br>
 
-    <button type="submit">Add Trivia</button>
+    <button type="submit">Add Trivia</button> 
+    <a href="/trivia/home">Back</a>
   </form>
 
-  <a href="/trivia/home">Back</a>
+ 
   
 </main>
 

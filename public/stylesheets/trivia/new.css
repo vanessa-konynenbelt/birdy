@@ -1,42 +1,28 @@
-body {
-  background-color: rgb(255, 211, 130);
-}
-
 main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-section {
-  height: 87.5vh;
-  width: 60vh;
-  margin: 10px;
-  padding: 10px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-h1 {
+h2, h3{
   color: #424748;
-  font-size: 250%;
 }
 
+div {
+  margin: 0 20px 0 20px;
+}
 
-a {
+main > a, button {
+  background-color: none;
   transition-duration: 0.15s;
   border: 1px solid orange;
-  color: rgb(241, 60, 99);
+  color: #424748;
   border-radius: 4px;
   padding: 5px;
   margin-left: 10px; 
   margin-right: 10px;
-  font-size: 100%;
+  font-size: 65%;
   text-decoration: none;
 }
 
