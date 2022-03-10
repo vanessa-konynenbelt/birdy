@@ -13,7 +13,7 @@ div {
   margin: 0 20px 0 20px;
 }
 
-main > a, button {
+main > a, div > button {
   background-color: none;
   transition-duration: 0.15s;
   border: 1px solid orange;
@@ -26,6 +26,6 @@ main > a, button {
   text-decoration: none;
 }
 
-a:hover {
+div > a:hover {
   background-color: rgb(255, 211, 130);
 }

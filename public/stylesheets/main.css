@@ -26,6 +26,11 @@ body {
 #home {
   color: rgb(241, 60, 99);
   font-weight: bold;
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 #home:hover {
@@ -42,7 +47,7 @@ body > nav {
   border-bottom: solid 6px rgb(255, 180, 193);
 }
 
-nav > a {
+.nav {
   margin: 20px;
   text-decoration: none;
   padding: 10px;
@@ -51,16 +56,16 @@ nav > a {
   border: none;
 }
 
-nav > a:visited {
+.nav:visited {
   color: rgb(100, 100, 100);
 }
 
-nav > a:hover {
+.nav:hover {
   color: white;
   background-color: rgb(241, 60, 99);
 }
 
-nav > a.active {
+.nav.active {
   color: white;
 }
 

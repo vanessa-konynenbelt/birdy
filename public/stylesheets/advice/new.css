@@ -1,7 +1,5 @@
 body {
   background-color: rgb(255, 211, 130);
-  background-image: url("data:image/svg+xml,<svg width='1800px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='100px' clip-path='url(%23emojiClipPath)'>📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝</text></svg>");
-  background-repeat: repeat;
 }
 
 main {
@@ -18,17 +16,18 @@ section {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
 h1 {
   color: #424748;
-  font-size: 250%;
+  font-size:200%;
+  text-align: center;
 }
 
-
-div > a {
+div > button {
+  background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
   color: rgb(241, 60, 99);
@@ -40,6 +39,6 @@ div > a {
   text-decoration: none;
 }
 
-div > a:hover {
+div > button:hover {
   background-color: rgb(255, 211, 130);
 }

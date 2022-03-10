@@ -44,7 +44,7 @@ div > form {
   justify-content: right;
 }
 
-a, button {
+div > a, div > button {
   background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
@@ -55,13 +55,15 @@ a, button {
   font-size: 100%;
   text-decoration: none;
 }
+
 a {
   margin: 12px;
 }
+
 button {
   font-size: 60%;
 }
 
-a:hover, button:hover{
+div > a:hover, div > button:hover{
   background-color: rgb(255, 211, 130);
 }
