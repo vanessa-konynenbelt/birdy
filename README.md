@@ -11,8 +11,8 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 ---
 ## Credits 
 
-- Quarto uses fonts by xxxx. Found at: https://fonts.google.com/specimen/xxxxxxxx
-- Quarto uses graphics by xxxx. Found at: https://canva.xxxxx
+- Birdy uses fonts by xxxx. Found at: https://fonts.google.com/specimen/xxxxxxxx
+- Birdy uses graphics by xxxx. Found at: https://canva.xxxxx
 
 ---
 
