@@ -1,15 +1,40 @@
-
 body {
+  background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='1800px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>❤️🤗💋🥭💕❤️🤗💋🥭💕❤️🤗💋🥭💕❤️🤗💋🥭💕</text></svg>");
+  background-repeat: repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 87.7vh;
+  width: 75vh;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: top;
   align-items: center;
+}
+
+h1 {
+  padding: 20px;
+  color: #424748;
+  font-size: 160%;
+  text-align: center;
 }
 
 .grid-container {
   margin:  20px 0 0 0;
   display: grid;
   gap: 5px;
-  width: 100vh;
+  width: 70vh;
   height: 10vh;
   border-top: solid 1px orange;
   border-bottom: solid 1px orange;
@@ -31,23 +56,21 @@ body {
   height: 50px; 
 }
 
-
 .button {
+  background-color: white;
+  transition-duration: 0.15s;
   border: 1px solid orange;
-  color: rgb(92, 91, 91);
-  font-size: 80%;
+  color: rgb(241, 60, 99);
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px; 
+  margin-right: 10px;
+  font-size: 100%;
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
 }
 
 .button:hover {
- background-color: #c7c7c7;
+  background-color: rgb(255, 211, 130);
 }
 
 .from {
@@ -69,14 +92,12 @@ body {
   grid-column: 5; 
   grid-row: 2;
   font-size: 60%;
-  color: rgb(92, 91, 91);
 }
 
 .delete {
   grid-column: 6; 
   grid-row: 2;
   font-size: 60%;
-  color: rgb(92, 91, 91);
 }
 
 
