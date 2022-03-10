@@ -37,6 +37,7 @@ div {
 
 div > p {
   justify-content: left;
+  margin-right: 50px;
 }
 
 div > form {
@@ -50,14 +51,15 @@ a, button {
   color: rgb(241, 60, 99);
   border-radius: 4px;
   padding: 5px;
-  margin-left: 10px; 
   margin-right: 10px;
   font-size: 100%;
   text-decoration: none;
 }
-
+a {
+  margin: 12px;
+}
 button {
-  font-size: 70%;
+  font-size: 60%;
 }
 
 a:hover, button:hover{
