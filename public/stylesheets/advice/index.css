@@ -1,19 +1,19 @@
 body {
   background-color: rgb(255, 211, 130);
-  background-image: url("data:image/svg+xml,<svg width='1800px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>❤️🤗💋🥭💕❤️🤗💋🥭💕❤️🤗💋🥭💕❤️🤗💋🥭💕</text></svg>");
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋</text></svg>");
   background-repeat: repeat;
 }
 
-main {
+main.advice-view {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-section {
+main.advice-view section {
   height: 87.7vh;
-  width: 75vh;
+  width: 65vw;
   margin: 10px;
   padding: 10px;
   background-color: white;
@@ -23,81 +23,85 @@ section {
   align-items: center;
 }
 
-h1 {
+main.advice-view h1{
   padding: 20px;
   color: #424748;
   font-size: 160%;
   text-align: center;
 }
 
-.grid-container {
-  margin:  20px 0 0 0;
+main.advice-view .grid-container {
   display: grid;
   gap: 5px;
-  width: 70vh;
-  height: 10vh;
-  border-top: solid 1px orange;
-  border-bottom: solid 1px orange;
+  width: 60vw;
+  height: 150px;
   border: solid 1px orange;
-  grid-column: 1fr 1fr 3fr 1fr 1fr;
-  padding: 0 0 5px 0;
+  margin: 20px;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 110px 40px;
 }
 
-.grid-item {
+main.advice-view .grid-item {
   text-align: center; 
   padding: 10px; 
 }
 
-.advice {
-  padding: 10px;
-  grid-column: 1 / span 6;
-  grid-row: 1;
-  background-color: rgb(255, 229, 181);
-  height: 50px; 
+form {
+  display: grid;
 }
 
-div > .button {
+main.advice-view .advice {
+  padding: 10px;
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+  background-color: rgb(255, 229, 181);
+}
+
+main.advice-view .from {
+  padding: 0 0 0 10px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  font-size: 80%;
+  color: rgb(92, 91, 91);
+}
+
+main.advice-view .years {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 80%;
+  color: rgb(92, 91, 91);
+}
+
+main.advice-view .edit {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+  font-size: 60%;
+  width: 60px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+main.advice-view .delete {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+  font-size: 60%;
+  width: 60px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+
+main.advice-view .button {
   background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
   color: rgb(241, 60, 99);
   border-radius: 4px;
   padding: 5px;
-  margin-left: 10px; 
-  margin-right: 10px;
   font-size: 100%;
   text-decoration: none;
 }
 
-div > .button:hover {
+main.advice-view .button:hover {
   background-color: rgb(255, 211, 130);
 }
-
-.from {
-  padding: 0 0 0 10px;
-  grid-column: 1; 
-  grid-row: 2; 
-  font-size: 80%;
-  color: rgb(92, 91, 91);
-}
-
-.years {
-  grid-column: 2; 
-  grid-row: 2; 
-  font-size: 80%;
-  color: rgb(92, 91, 91);
-}
-
-.edit {
-  grid-column: 5; 
-  grid-row: 2;
-  font-size: 60%;
-}
-
-.delete {
-  grid-column: 6; 
-  grid-row: 2;
-  font-size: 60%;
-}
-
-

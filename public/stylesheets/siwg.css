@@ -43,3 +43,7 @@
   position: absolute;
   width: 1px;
 }
+
+#logout { 
+  border: none !important;
+}

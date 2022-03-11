@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/stylesheets/advice/index.css" />
 <%- include('../partials/nav') %>
 
-<main>
+<main class="advice-view">
   <section>
     <h1>Share some words of wisdom with the newly weds!  </h1>
     <% advice.forEach(ad => { %>
@@ -10,18 +10,17 @@
         <div class = "advice"><%=ad.advice%></div>
         <div class = "from">From: <%=ad.from%></div>
         <div class = "years">Together for <%=ad.years%> years</div>
-        <div>
+        <div class = "edit">
           <form action="/advice/<%=ad._id%>/edit" method="GET">
-          <button class="button edit" type="submit">edit</button>
+          <button class="button" type="submit">edit</button>
           </form>
         </div>
-        <div>
+        <div class = "delete">
           <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
-          <button class ="button delete" type="submit">delete</button>
+          <button class ="button" type="submit">delete</button>
           </form>
         </div>
     </div>
-    <br>
     <% }) %>
     <a class = "button" href="/advice/new">Add Advice</a>
   </section>

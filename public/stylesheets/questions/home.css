@@ -1,19 +1,19 @@
 body {
   background-color: rgb(255, 211, 130);
-  background-image: url("data:image/svg+xml,<svg width='1800px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='85px' clip-path='url(%23emojiClipPath)'>👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢</text></svg>");
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='85px' clip-path='url(%23emojiClipPath)'>👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢</text></svg>");
   background-repeat: repeat;
 }
 
-main {
+main.question-view {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-section {
+main.question-view section {
   height: 87.7vh;
-  width: 75vh;
+  width: 65vw;
   margin: 10px;
   padding: 10px;
   background-color: white;
@@ -23,28 +23,27 @@ section {
   align-items: center;
 }
 
-h1 {
+main.question-view h1 {
   color: #424748;
   font-size: 200%;
 }
 
-div {
+main.question-view div {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
+  justify-content: right;
+  width: 45vw;
 }
 
-div > p {
-  justify-content: left;
+main.question-view p {
+  padding: 5px;
+  text-align: left;
+  width: 100%;
   margin-right: 50px;
 }
 
-div > form {
-  justify-content: right;
-}
-
-div > a, div > button {
+main.question-view button, main.question-view a {
   background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
@@ -54,16 +53,17 @@ div > a, div > button {
   margin-right: 10px;
   font-size: 100%;
   text-decoration: none;
+  margin-right: 0 auto; 
 }
 
-a {
-  margin: 12px;
-}
-
-button {
+main.question-view button {
   font-size: 60%;
 }
 
-div > a:hover, div > button:hover{
+main.question-view a {
+  margin:30px;
+}
+
+main.question-view a:hover, main.question-view button:hover{
   background-color: rgb(255, 211, 130);
 }

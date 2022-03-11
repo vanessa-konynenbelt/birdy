@@ -1,6 +1,6 @@
 body {
   background-color: rgb(255, 211, 130);
-  background-image: url("data:image/svg+xml,<svg width='1800px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='100px' clip-path='url(%23emojiClipPath)'>📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝</text></svg>");
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝</text></svg>");
   background-repeat: repeat;
 }
 
@@ -13,7 +13,7 @@ main {
 
 section {
   height: 90vh;
-  width: 75vh;
+  width: 65vw;
   margin: 10px;
   background-color: white;
   display: flex;
