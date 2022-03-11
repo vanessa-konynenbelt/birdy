@@ -37,6 +37,7 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 - [x] Add questions
 - [x] Add advice
 - [ ] highlight active tab
+- [ ] hide edit / delete on resources not belonging to user 
 - [ ] Add play trivia game functionality
 - [ ] Add edit / delete on trivia resource
 - [ ] Add play shoe game functionality
