@@ -47,13 +47,16 @@ function edit(req, res) {
 }
 
 function update(req, res) {
-  console.log('trying to update')
   Advice.findById(req.params.id)
   .then(advice => {
+    if (advice.owner.equals(req.user.profile._id)) {
       advice.updateOne(req.body, {new: true})
       .then(()=> {
         res.redirect(`/advice`)
       })
+    }else{
+      throw new Error ('🚫 Not authorized 🚫')
+    }
   })
   .catch(err => {
     console.log(err)
@@ -63,13 +66,16 @@ function update(req, res) {
 }
 
 function deleteAdvice(req, res) {
-  console.log('trying to delete this', req.params.id)
   Advice.findById(req.params.id)
   .then(advice => {  
+    if (advice.owner.equals(req.user.profile._id)) {
       advice.delete()
       .then(() => {
         res.redirect('/advice')
       })  
+    }else{
+      throw new Error ('🚫 Not authorized 🚫')
+    }
   })
   .catch(err => {
     console.log(err)
