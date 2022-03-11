@@ -1,18 +1,19 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/advice/new.css" />
+<link rel="stylesheet" href="/stylesheets/questions/new.css" />
 <%- include('../partials/nav') %>
 
-<main>
-  <h1>Enter a question</h1>
-  <form action="/questions" method="POST" autocomplete="off">
-
-    <label>Question
-      <textarea name="question"></textarea>
-    </label><br>
-
-    <button type="submit">Add Question</button>
-
-    <a href="/questions/home">Back</a>
-
-  </form>
+<main class = "new-question-view">
+  <section>
+    <h1>Enter a question for Eric & Inga-Liese!</h1>
+    <form action="/questions" method="POST" autocomplete="off">
+      <div>
+        <label>Question</label>
+        <textarea name="question"></textarea>
+      </div>
+      <div>
+        <button type="submit">Add Question</button>
+        <a href="/questions">Back</a>
+      </div>
+    </form>
+  </section>
 </main>

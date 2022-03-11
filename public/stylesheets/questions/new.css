@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢👞👠👟👡🥾👢</text></svg>");
+  background-repeat: repeat;
+}
+
+main.new-question-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.new-question-view  section {
+  height: 90vh;
+  width: 65vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.new-question-view h1 {
+  padding: 0 80px 0 80px;
+  text-align: center;
+  color: #424748;
+  font-size: 180%;
+}
+
+main.new-question-view div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
+}
+
+main.new-question-view label {
+  height: 100%;
+  padding-top: 17px;
+}
+
+main.new-question-view textarea {
+  width: 25vw;
+  height: 15vh;
+  margin: 20px;
+}
+
+main.new-question-view a, main.new-question-view button {
+  background-color: white;
+  transition-duration: 0.15s;
+  border: 1px solid orange;
+  color: #424748;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px; 
+  margin-right: 10px;
+  font-size: 65%;
+  text-decoration: none;
+}
+
+main.new-question-view a:hover {
+  background-color: rgb(255, 211, 130);
+}
+
+main.new-question-view button:hover {
+  background-color: rgb(255, 211, 130);
+}
