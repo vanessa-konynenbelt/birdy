@@ -14,10 +14,6 @@ router.put('/:id', questionsCtrl.update) //edit->save update
 
 router.delete('/:id', questionsCtrl.delete) //delete
 
-// router.get('/index', function (req, res) { //home
-//   res.render('questions/index', { title: 'All Questions Page', user: req.user ? req.user : null })
-// })
-
 router.get('/play', function (req, res) { //play
   res.render('questions/play', { title: 'Play Question Game', user: req.user ? req.user : null })
 })
