@@ -1,18 +1,22 @@
-# Birdy
+## Getting Started 
 
-![Birdy home]()
+[Link to birdy](https://birdy-vgk.herokuapp.com/)
+
+---
+# Birdy
 
 Motivated by my brother's impending nuptials, I created Birdy as a fun and interactive way to entertain wedding guests and the couple alike. Guests can enter fun trivia about the bride and groom, add questions for the couple, or share  sweet marriage advice. 
 
----
-
-## [Link to birdy](https://birdy-vgk.herokuapp.com/)
+![Birdy home](blob:https://imgur.com/30647a3e-b4b7-47d4-a0c7-f2652e7916a1)
+![Birdy shoe game](https://i.imgur.com/QSHRlt9.png)
+![Birdy trivia game](https://i.imgur.com/7JGp82b.png)
+![Birdy marriage advice](https://i.imgur.com/wgtpOHP.png)
 
 ---
 ## Credits 
 
-- Birdy uses fonts by xxxx. Found at: https://fonts.google.com/specimen/xxxxxxxx
-- Birdy uses graphics by xxxx. Found at: https://canva.xxxxx
+- Birdy uses fonts designed by Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida. Found at: https://fonts.google.com/specimen/Raleway
+- Birdy uses graphics by Canva. Found at: https://www.canva.com/
 
 ---
 
@@ -33,10 +37,9 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 - [x] Add questions
 - [x] Add advice
 - [ ] highlight active tab
-- [ ] Add play trivia game logic
-- [ ] Add socket io
+- [ ] Add play trivia game functionality
 - [ ] Add edit / delete on trivia resource
-- [ ] Add play shoe game logic
+- [ ] Add play shoe game functionality
 - [ ] Scale to mobile
 
 
