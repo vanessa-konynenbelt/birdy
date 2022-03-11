@@ -33,11 +33,11 @@ main.advice-view h1{
 main.advice-view .grid-container {
   display: grid;
   gap: 5px;
-  width: 60vw;
+  width: 800px;
   height: 100px;
   border: solid 1px orange;
   margin: 20px;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: 200px 200px 100px 75px 100px 100px;
   grid-template-rows: 60px 40px;
 }
 
@@ -54,7 +54,7 @@ main.advice-view .advice {
   padding: 10px;
   grid-column: 1 / 7;
   grid-row: 1 / 2;
-  background-color: rgb(255, 229, 181);
+  background-color: rgb(255, 238, 207);
 }
 
 main.advice-view .from {

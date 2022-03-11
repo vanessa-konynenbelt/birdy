@@ -1,25 +1,29 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/flights/new.css" />
+<link rel="stylesheet" href="/stylesheets/advice/new.css" />
 <%- include('../partials/nav') %>
 
-<main>
-  <h1><%= title %></h1>
-  <form action="/advice/<%= advice._id %>?_method=PUT" method="POST">
-
-    <label>Advice
-      <input name="advice" value="<%= advice.advice%>"></input>
-    </label><br>
-
-    <label>Years together
-      <input name="years" value="<%= advice.years%>"></input>
-    </label><br>
-
-    <label>Name
-      <input name="from" value="<%= advice.from%>"></input>
-    </label><br>
-
-    <button type="submit">Save Advice</button>
-  </form>
+<main class="advice-new">
+  <section>
+    <h1><%= title %></h1>
+    <form action="/advice/<%= advice._id %>?_method=PUT" method="POST">
+      <div>
+          <label>Advice </label>
+          <textarea name="advice" value="<%= advice.advice%>"><%= advice.advice%></textarea>
+      </div>
+      <div>
+          <label>Years together </label>
+          <input name="years" value="<%= advice.years%>"></input>
+       </div>
+       <div>
+          <label>Name</label>
+          <input name="from" value="<%= advice.from%>"></input>
+      </div>
+      <div>
+        <button type="submit">Save Advice</button>
+        <a href="/advice">Back</a>
+      </div>
+    </form>
+  </section>
 </main>
 
 <%- include('../partials/footer') %>
