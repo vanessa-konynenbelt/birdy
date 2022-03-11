@@ -12,7 +12,7 @@ main.advice-view {
 }
 
 main.advice-view section {
-  height: 87.7vh;
+  height: 88vh;
   width: 65vw;
   margin: 10px;
   padding: 10px;
@@ -34,11 +34,11 @@ main.advice-view .grid-container {
   display: grid;
   gap: 5px;
   width: 60vw;
-  height: 150px;
+  height: 100px;
   border: solid 1px orange;
   margin: 20px;
   grid-template-columns: repeat(6, auto);
-  grid-template-rows: 110px 40px;
+  grid-template-rows: 60px 40px;
 }
 
 main.advice-view .grid-item {

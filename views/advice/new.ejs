@@ -2,24 +2,25 @@
 <link rel="stylesheet" href="/stylesheets/advice/new.css" />
 <%- include('../partials/nav') %>
 
-<main>
+<main class="advice-new">
   <section>
-    <h1>Enter some advice for Eric & Inga-Liese!</h1>
+    <h1>Share some marriage advice for Eric & Inga-Liese!</h1>
     <form action="/advice" method="POST" autocomplete="off">
-
-      <label>Advice
-        <textarea name="advice"></textarea>
-      </label><br>
-
-      <label>Years together
-        <input name="years"></input>
-      </label><br>
-
-      <label>Name
-        <input name="from"></input>
-      </label><br>
       <div>
-      <button type="submit">Add Advice</button>
+        <label>Advice </label>
+        <textarea name="advice"></textarea>
+      </div>
+      <div>
+        <label>Years together </label>
+        <input name="years"></input>
+      </div>
+      <div>
+        <label>From </label>
+        <input name="from" placeholder="your name(s)"></input>
+      </div>
+      <div>
+        <button type="submit">Add Advice</button>
+        <a href="/advice">Back</a>
       </div>
     </form>
   </section>

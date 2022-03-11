@@ -1,44 +1,69 @@
 body {
   background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋🥭🤗💋</text></svg>");
+  background-repeat: repeat;
 }
 
-main {
+main.advice-new {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-section {
+main.advice-new section {
   height: 90vh;
-  width: 75vh;
-  margin: 10px;
+  width: 65vw;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
 }
 
-h1 {
-  color: #424748;
-  font-size:200%;
+main.advice-new h1 {
+  padding: 0 90px 0 90px;
   text-align: center;
+  color: #424748;
+  font-size: 180%;
 }
 
-div > button {
+main.advice-new div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
+}
+
+main.advice-new label {
+  height: 100%;
+  padding-top: 17px;
+}
+
+main.advice-new textarea{
+  width: 25vw;
+  height: 15vh;
+  margin: 20px;
+}
+
+main.advice-new input{
+  margin: 20px;
+}
+
+main.advice-new a, main.advice-new button {
   background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
-  color: rgb(241, 60, 99);
+  color: #424748;
   border-radius: 4px;
   padding: 5px;
   margin-left: 10px; 
   margin-right: 10px;
-  font-size: 100%;
+  font-size: 65%;
   text-decoration: none;
 }
 
-div > button:hover {
+main.advice-new a:hover, main.advice-new button:hover {
   background-color: rgb(255, 211, 130);
 }
