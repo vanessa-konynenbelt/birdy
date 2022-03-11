@@ -1,7 +1,6 @@
 import { Advice } from '../models/advice.js'
 
 function index(req, res) {
-  console.log("ADVICE")
   Advice.find({})
   .then(advice => {
     res.render('advice/index', {
@@ -24,20 +23,22 @@ function create(req, res) {
 }
 
 function newAdvice(req, res) {
-  console.log('adding new advice in the controller')
     res.render('advice/new', {
       title: "add advice"
     })
 }
 
 function edit(req, res) {
-  console.log('trying to edit')
   Advice.findById(req.params.id)
   .then(advice => {
+    if (advice.owner.equals(req.user.profile._id)) {
     res.render("advice/edit", {
       advice,
       title: "Edit Advice"
     })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }   
   })
   .catch(err => {
     console.log(err)
