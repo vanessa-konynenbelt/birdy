@@ -41,6 +41,7 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 - [ ] Add edit / delete on trivia resource
 - [ ] Add play shoe game functionality
 - [ ] Scale to mobile
+- [ ] Add new favicon
 
 
 
