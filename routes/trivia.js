@@ -5,7 +5,7 @@ import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()
 
-router.get('/new', triviaCtrl.new) //show new form
+router.get('/new', isLoggedIn, triviaCtrl.new) //show new form
 router.get('/', triviaCtrl.index) //read all 
 
 router.post('/', isLoggedIn, triviaCtrl.create) //create new

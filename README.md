@@ -18,9 +18,13 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 
 ## Technologies used 
 
-![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![NODE.JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![HEROKU](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![GOOGLE CLOUD](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ---
 
@@ -28,7 +32,11 @@ Motivated by my brother's impending nuptials, I created Birdy as a fun and inter
 
 - [x] Add questions
 - [x] Add advice
-- [ ] Add play trivia logic
+- [ ] highlight active tab
+- [ ] Add play trivia game logic
+- [ ] Add socket io
+- [ ] Add edit / delete on trivia resource
+- [ ] Add play shoe game logic
 - [ ] Scale to mobile
 
 

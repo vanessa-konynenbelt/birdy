@@ -6,7 +6,7 @@ const router = Router()
 
 router.get('/new', isLoggedIn, adviceCtrl.new) //new advice form
 router.get('/', adviceCtrl.index)  //read
-router.get("/:id/edit", adviceCtrl.edit) //edit->show form
+router.get("/:id/edit", isLoggedIn, adviceCtrl.edit) //edit->show form
 
 router.post('/', adviceCtrl.create) //create new advice
 
