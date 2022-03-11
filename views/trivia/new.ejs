@@ -2,28 +2,29 @@
 <link rel="stylesheet" href="/stylesheets/trivia/new.css" />
 <%- include('../partials/nav') %>
 
-<main>
-  <h2>Enter a fun fact, short story, or trivia tidbit about the bride or groom!</h2>
-  <h3>Don't give away who it's about! We'll guess!</h3>
-  <form action="/trivia" method="POST" autocomplete="off">
-
-    <label>About
-      <select name="about">
-        <option value="Eric">Eric</option>
-        <option value="Inga-Liese">Inga-Liese</option>
-      </select>
-    </label><br>
-
-    <label>Trivia
-      <textarea name="trivia"></textarea>
-    </label><br>
-
-    <button type="submit">Add Trivia</button> 
-    <a href="/trivia/home">Back</a>
-  </form>
-
- 
-  
+<main class="new-trivia-view">
+  <section>
+    <h2>Enter a fun fact, short story, or trivia tidbit about the bride or groom!</h2>
+    <h3>(⚠️ Don't give away who it's about. We'll guess! ⚠️)</h3>
+    <form action="/trivia" method="POST" autocomplete="off">
+      <div>
+        <label>About</label>
+          <select name="about">
+            <option value="Eric">Eric</option>
+            <option value="Inga-Liese">Inga-Liese</option>
+          </select>
+      </div>
+      <div>
+        <br>
+        <label>Trivia </label>
+        <textarea name="trivia"></textarea><br>
+      </div>
+      <div>
+        <button type="submit">Add Trivia</button> 
+        <a href="/trivia/home">Back</a>  
+      </div>
+    </form> 
+  </section>
 </main>
 
 <%- include('../partials/footer') %>

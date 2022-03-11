@@ -1,20 +1,60 @@
-main {
+body {
+  background-color: rgb(255, 211, 130);
+  background-image: url("data:image/svg+xml,<svg width='2000px' height='150px' xmlns='http://www.w3.org/2000/svg'><text x='0' y='130px' font-size='80px' clip-path='url(%23emojiClipPath)'>📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝</text></svg>");
+  background-repeat: repeat;
+}
+
+main.new-trivia-view {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-h2, h3{
+main.new-trivia-view  section {
+  height: 90vh;
+  width: 65vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.new-trivia-view h2, main.new-trivia-view h3{
+  padding: 0 80px 0 80px;
+  text-align: center;
   color: #424748;
 }
 
-div {
-  margin: 0 20px 0 20px;
+main.new-trivia-view div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
 }
 
-main > a, div > button {
-  background-color: none;
+main.new-trivia-view select {
+  width: 25vw;
+  margin: 20px;
+}
+
+
+main.new-trivia-view label {
+  height: 100%;
+  padding-top: 17px;
+}
+
+
+main.new-trivia-view textarea {
+  width: 25vw;
+  height: 15vh;
+  margin: 20px;
+}
+
+main.new-trivia-view a, main.new-trivia-view button {
+  background-color: white;
   transition-duration: 0.15s;
   border: 1px solid orange;
   color: #424748;
@@ -26,6 +66,10 @@ main > a, div > button {
   text-decoration: none;
 }
 
-div > a:hover {
+main.new-trivia-view a:hover {
+  background-color: rgb(255, 211, 130);
+}
+
+main.new-trivia-view button:hover {
   background-color: rgb(255, 211, 130);
 }
