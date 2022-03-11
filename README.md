@@ -7,7 +7,7 @@
 
 Motivated by my brother's impending nuptials, I created Birdy as a fun and interactive way to entertain wedding guests and the couple alike. Guests can enter fun trivia about the bride and groom, add questions for the couple, or share  sweet marriage advice. 
 
-![Birdy home](blob:https://imgur.com/30647a3e-b4b7-47d4-a0c7-f2652e7916a1)
+![Birdy home](https://i.imgur.com/VXQ6pbl.png)
 ![Birdy shoe game](https://i.imgur.com/QSHRlt9.png)
 ![Birdy trivia game](https://i.imgur.com/7JGp82b.png)
 ![Birdy marriage advice](https://i.imgur.com/wgtpOHP.png)
