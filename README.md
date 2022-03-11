@@ -1,11 +1,18 @@
+# Birdy
+
+Motivated by my brother's impending nuptials, I created Birdy as a fun and interactive way to entertain wedding guests and the couple alike. Guests can enter fun trivia about the bride and groom, add questions for the couple, or share  sweet marriage advice. 
+
+---
+
 ## Getting Started 
 
 [Link to birdy](https://birdy-vgk.herokuapp.com/)
 
 ---
-# Birdy
 
-Motivated by my brother's impending nuptials, I created Birdy as a fun and interactive way to entertain wedding guests and the couple alike. Guests can enter fun trivia about the bride and groom, add questions for the couple, or share  sweet marriage advice. 
+## About
+
+Birdy is a fullstack MEN application (MongoDB, Express.js, Node.js) with full CRUD capability on two resources and partial CRUD on a third. 
 
 ![Birdy home](https://i.imgur.com/vzOLa25.png)
 ![Birdy shoe game](https://i.imgur.com/QSHRlt9.png)
