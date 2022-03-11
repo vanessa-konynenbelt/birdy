@@ -33,11 +33,14 @@ function newQuestion(req, res) {
 function edit(req, res) {
   Question.findById(req.params.id)
   .then(question => {
-    console.log(question)
+    if (advice.owner.equals(req.user.profile._id)) {
     res.render("questions/edit", {
       question,
       title: "Edit Question"
     })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }   
   })
   .catch(err => {
     console.log(err)
@@ -48,10 +51,14 @@ function edit(req, res) {
 function update(req, res) {
   Question.findById(req.params.id)
   .then(question => {
+    if (advice.owner.equals(req.user.profile._id)) {
       question.updateOne(req.body, {new: true})
       .then(()=> {
         res.redirect(`/questions`)
       })
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }  
   })
   .catch(err => {
     console.log(err)
@@ -62,10 +69,14 @@ function update(req, res) {
 function deleteQuestion(req, res) {
   Question.findById(req.params.id)
   .then(question => {  
+    if (advice.owner.equals(req.user.profile._id)) {
       question.delete()
       .then(() => {
         res.redirect('/questions')
-      })  
+      }) 
+    } else {
+      throw new Error ('🚫 Not authorized 🚫')
+    }   
   })
   .catch(err => {
     console.log(err)
