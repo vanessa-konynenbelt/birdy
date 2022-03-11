@@ -5,11 +5,9 @@
 <main class="trivia-index">
   <section>
     <h2>This person... </h2>
-    <ul>
     <% trivia.forEach(el => { %>
-      <li><%= el.trivia %></li>
+      <p><%= el.trivia %></p>
     <% }) %>
-    </ul>
     <a href="/trivia/home">Back</a>
   </section>
 </main>
