@@ -1,11 +1,16 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/trivia/home.css" />
+<link rel="stylesheet" href="/stylesheets/trivia/index.css" />
 <%- include('../partials/nav') %>
 
-<section>
-<h2 id="text">I'll display one trivia at a time... you tell me who it's about. Ready? </h2>
-<h2><%= trivia.trivia %></h2>
-<a href="/trivia/play/<%=trivia.idx+1%>">Play!</a>
-</section>
+<main class="trivia-index">
+  <section>
+  <h2 id="text">Guess who...  </h2>
+  <h2><%= trivia.trivia %></h2>
+  <div class="play-div">
+    <a href="/trivia/play/<%=trivia.idx+1%>">Play!</a>
+    <a href="/trivia/home">Back</a>
+  </div>
+  </section>
+</main>
 
 <%- include('../partials/footer') %>

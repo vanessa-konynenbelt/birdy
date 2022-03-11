@@ -23,7 +23,7 @@ main.question-view section {
   align-items: center;
 }
 
-main.question-view h2 {
+main.question-view h1 {
   color: #424748;
   font-size: 200%;
 }

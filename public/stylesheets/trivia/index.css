@@ -23,9 +23,11 @@ main.trivia-index section {
   align-items: center;
 }
 
-main.trivia-index h1 {
+main.trivia-index h2 {
   color: #424748;
   font-size: 200%;
+  margin-right: 80px; 
+  margin-left: 80px;
 }
 
 main.trivia-index div {
@@ -33,6 +35,14 @@ main.trivia-index div {
   flex-direction: row;
   align-items: center;
   justify-content: right;
+  width: 45vw;
+}
+
+main.trivia-index .play-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 45vw;
 }
 
