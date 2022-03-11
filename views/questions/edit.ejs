@@ -1,17 +1,19 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/flights/new.css" />
+<link rel="stylesheet" href="/stylesheets/questions/new.css" />
 <%- include('../partials/nav') %>
 
-<main>
-  <h1>Enter a question</h1>
-  <form action="/questions/<%= question._id %>?_method=PUT" method="POST">
-
-    <label>Question
-      <input name="question" value="<%= question.question%>"></input>
-    </label><br>
-
-    <button type="submit">Save question</button>
-  </form>
+<main class= "new-question-view">
+  <section>
+    <h1>Edit question</h1>
+    <form action="/questions/<%= question._id %>?_method=PUT" method="POST">
+      <div>
+        <label>Question</label>
+        <textarea type="text" name="question" ><%= question.question%></textarea> 
+      </div>
+      <div>
+        <button type="submit">Save question</button>
+        <a href="/questions">Back</a>
+      </div>
+    </form>
+  </section>
 </main>
-
-<%- include('../partials/footer') %>

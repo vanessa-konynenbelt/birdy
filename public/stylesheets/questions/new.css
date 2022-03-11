@@ -11,7 +11,7 @@ main.new-question-view {
   align-items: center;
 }
 
-main.new-question-view  section {
+main.new-question-view section {
   height: 90vh;
   width: 65vw;
   background-color: white;

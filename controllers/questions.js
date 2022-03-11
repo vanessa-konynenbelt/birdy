@@ -1,7 +1,6 @@
 import { Question } from '../models/question.js'
 
 function index(req, res) {
-  console.log("QUESTION")
   Question.find({})
   .then(question => {
     res.render('questions/index', {
@@ -32,9 +31,9 @@ function newQuestion(req, res) {
 
 
 function edit(req, res) {
-  console.log('trying to edit')
   Question.findById(req.params.id)
   .then(question => {
+    console.log(question)
     res.render("questions/edit", {
       question,
       title: "Edit Question"
@@ -44,11 +43,9 @@ function edit(req, res) {
     console.log(err)
     res.redirect('/questions')
   })
-  console.log('edited')
 }
 
 function update(req, res) {
-  console.log('trying to update')
   Question.findById(req.params.id)
   .then(question => {
       question.updateOne(req.body, {new: true})
@@ -60,11 +57,9 @@ function update(req, res) {
     console.log(err)
     res.redirect(`/questions`)
   })
-  console.log('updated?')
 }
 
 function deleteQuestion(req, res) {
-  console.log('trying to delete this', req.params.id)
   Question.findById(req.params.id)
   .then(question => {  
       question.delete()
