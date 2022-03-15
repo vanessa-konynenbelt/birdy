@@ -41,15 +41,14 @@ Birdy is a fullstack MEN application (MongoDB, Express.js, Node.js) with full CR
 
 ## Ice Box Items 
 
-- [x] Add questions
-- [x] Add advice
+- [x] add questions
+- [x] add advice
 - [ ] highlight active tab
-- [ ] hide edit / delete on resources not belonging to user 
-- [ ] Add play trivia game functionality
-- [ ] Add edit / delete on trivia resource
-- [ ] Add play shoe game functionality
-- [ ] Scale to mobile
-- [ ] Restyle favicon
+- [ ] add play trivia game functionality
+- [ ] add edit / delete on trivia resource
+- [ ] add play shoe game functionality
+- [ ] scale to mobile
+- [ ] restyle favicon
 
 
 

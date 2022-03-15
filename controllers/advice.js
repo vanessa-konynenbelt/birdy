@@ -3,6 +3,7 @@ import { Advice } from '../models/advice.js'
 function index(req, res) {
   Advice.find({})
   .then(advice => {
+    console.log(advice)
     res.render('advice/index', {
       advice,
       title: "advice"
@@ -15,6 +16,7 @@ function index(req, res) {
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile._id
   const advice = new Advice(req.body)
   advice.save(function(err){
     if(err) return res.redirect('/advice/new')
@@ -37,6 +39,7 @@ function edit(req, res) {
       title: "Edit Advice"
     })
     } else {
+      console.log('failed to edit advice')
       throw new Error ('🚫 Not authorized 🚫')
     }   
   })
@@ -51,11 +54,13 @@ function update(req, res) {
   Advice.findById(req.params.id)
   .then(advice => {
     if (advice.owner.equals(req.user.profile._id)) {
+      console.log('we are in the IF!!:)')
       advice.updateOne(req.body, {new: true})
       .then(()=> {
         res.redirect(`/advice`)
       })
     }else{
+      console.log('failed to update advice')
       throw new Error ('🚫 Not authorized 🚫')
     }
   })
@@ -75,6 +80,7 @@ function deleteAdvice(req, res) {
         res.redirect('/advice')
       })  
     }else{
+      console.log('failed to delete advice')
       throw new Error ('🚫 Not authorized 🚫')
     }
   })

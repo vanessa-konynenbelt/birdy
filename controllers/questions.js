@@ -15,6 +15,7 @@ function index(req, res) {
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile._id
   const question = new Question(req.body)
   question.save(function(err){
     if(err) return res.redirect('/questions/new')
@@ -33,12 +34,13 @@ function newQuestion(req, res) {
 function edit(req, res) {
   Question.findById(req.params.id)
   .then(question => {
-    if (advice.owner.equals(req.user.profile._id)) {
+    if (question.owner.equals(req.user.profile._id)) {
     res.render("questions/edit", {
       question,
       title: "Edit Question"
     })
     } else {
+      console.log('failed to edit question')
       throw new Error ('🚫 Not authorized 🚫')
     }   
   })
@@ -51,12 +53,13 @@ function edit(req, res) {
 function update(req, res) {
   Question.findById(req.params.id)
   .then(question => {
-    if (advice.owner.equals(req.user.profile._id)) {
+    if (question.owner.equals(req.user.profile._id)) {
       question.updateOne(req.body, {new: true})
       .then(()=> {
         res.redirect(`/questions`)
       })
     } else {
+      console.log('failed to delete question')
       throw new Error ('🚫 Not authorized 🚫')
     }  
   })
@@ -69,12 +72,13 @@ function update(req, res) {
 function deleteQuestion(req, res) {
   Question.findById(req.params.id)
   .then(question => {  
-    if (advice.owner.equals(req.user.profile._id)) {
+    if (question.owner.equals(req.user.profile._id)) {
       question.delete()
       .then(() => {
         res.redirect('/questions')
       }) 
     } else {
+      console.log('failed to delete question')
       throw new Error ('🚫 Not authorized 🚫')
     }   
   })

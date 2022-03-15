@@ -8,12 +8,14 @@
     <% question.forEach(q => { %>
       <div>
         <p><%=q.question %></p>
-        <form action="/questions/<%=q._id%>/edit" method="GET">
-          <button class="btn" type="submit">edit</button>
-        </form>
-        <form action="/questions/<%=q._id%>?_method=DELETE" method="POST">
-          <button class="btn" type="submit">delete</button>
-        </form>
+        <%if (q.owner.equals(user?.profile._id)) { %>
+          <form action="/questions/<%=q._id%>/edit" method="GET">
+            <button class="btn" type="submit">edit</button>
+          </form>
+          <form action="/questions/<%=q._id%>?_method=DELETE" method="POST">
+            <button class="btn" type="submit">delete</button>
+          </form>
+        <% } %>
       </div>
     <% }) %>
     <a class = "button" href="/questions/new">Add Question</a>

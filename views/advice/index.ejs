@@ -10,16 +10,18 @@
         <div class = "advice"><%=ad.advice%></div>
         <div class = "from">From: <%=ad.from%></div>
         <div class = "years">Together for <%=ad.years%> years</div>
-        <div class = "edit">
-          <form action="/advice/<%=ad._id%>/edit" method="GET">
-          <button class="button" type="submit">edit</button>
-          </form>
-        </div>
-        <div class = "delete">
-          <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
-          <button class ="button" type="submit">delete</button>
-          </form>
-        </div>
+        <% if (ad.owner.equals(user?.profile._id)) { %>
+          <div class = "edit">
+            <form action="/advice/<%=ad._id%>/edit" method="GET">
+            <button class="button" type="submit">edit</button>
+            </form>
+          </div>
+          <div class = "delete">
+            <form action="/advice/<%=ad._id%>?_method=DELETE" method="POST">
+            <button class ="button" type="submit">delete</button>
+            </form>
+          </div>
+        <% } %>
     </div>
     <% }) %>
     <a class = "button" href="/advice/new">Add Advice</a>
